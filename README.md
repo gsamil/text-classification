@@ -19,5 +19,3 @@
 2. Now you can train either classifier or recommender models.
     i. For classification, see [classification/evaluate.py](./classification/evaluate.py)
     ii. For recommendation, see [recommender/evaluate.py](./recommender/evaluate.py)
-
-# Part B

@@ -35,6 +35,7 @@ class ClassificationDataset(Dataset):
         combined_features_positive = []
         combined_features_negative = []
         for category in self.categories:
+            # this is the part where we convert product text and category to indexes
             product_text_tokens = [self.vocab[token] for token in example.product_text]
             category_tokens = [self.vocab[token] for token in category]
             product_text_token_indexes = set_feature_dimension(
