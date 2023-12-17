@@ -3,6 +3,8 @@ from collections import Counter
 from settings import CATEGORIES_PATH
 from data import get_samples_from_file
 
+# This file creates the categories file from the training data.
+# run with `export PYTHONPATH=. && python make_categories.py` in the same directory.
 
 train_file = "./data/train_cleaned.csv"
 

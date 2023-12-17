@@ -1,2 +1,2 @@
-CATEGORIES_PATH = "categories.csv"
+CATEGORIES_PATH = "./data/categoriess.csv"
 DEVICE = "mps"

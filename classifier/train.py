@@ -15,6 +15,9 @@ from settings import CATEGORIES_PATH
 import os
 from classifier.dataset import ClassificationDataset
 
+# Set `train_file`, `test_file` and `model_dir` apropriately.
+# run with `export PYTHONPATH=. && python classifier/train.py` in the main directory.
+
 
 train_file = "./data/train_cleaned.csv"
 test_file = "./data/test_cleaned_all_100.csv"

@@ -70,28 +70,6 @@ def preprocess_text(text: str) -> str:
     return "".join([c for c in text.lower() if c in vocab])
 
 
-def clean_data(file_path: str, out_file_path: str) -> None:
-    """This function reads the data from the given file path, preprocesses the text and saves the cleaned data to the given out file path"""
-    dtypes = {"product_id": str, "product_text": str, "category": str}
-    df = pd.read_csv(file_path, sep=chr(1), dtype=dtypes).dropna(
-        subset=["category"], inplace=False
-    )
-    samples = []
-    for _, row in df.iterrows():
-        product_text = preprocess_text(row["product_text"])
-        if product_text == "":
-            continue
-        category = preprocess_text(row["category"])
-        sample = {
-            "product_id": row["product_id"],
-            "product_text": product_text,
-            "category": category,
-        }
-        samples.append(sample)
-    df = pd.DataFrame.from_dict(samples)
-    df.to_csv(out_file_path, index=False, sep=chr(1))
-
-
 def get_samples_from_file(file_path: str) -> list[ClassificationSample]:
     """This function reads the data from the given file path and returns the samples"""
     dtypes = {"product_id": str, "product_text": str, "category": str}
