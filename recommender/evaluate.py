@@ -13,7 +13,7 @@ from recommender.train import model_dir, test_file
 import time
 
 # Set `test_file` and `model_dir` apropriately (in the train.py file).
-# run with `export PYTHONPATH=. && python classifier/evaluate.py` in the main directory.
+# run with `export PYTHONPATH=. && python recommender/evaluate.py` in the main directory.
 
 model: TextClassifier
 training_params: TrainingParameters

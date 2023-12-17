@@ -16,10 +16,11 @@ from settings import CATEGORIES_PATH
 import os
 
 # Set `train_file`, `test_file` and `model_dir` apropriately.
+# Set `negative_samples` to the number of negative samples you want to use.
 # run with `export PYTHONPATH=. && python recommender/train.py` in the main directory.
 
 train_file = "./data/train_cleaned.csv"
-test_file = "./data/test_cleaned_all_100.csv"
+test_file = "./data/test_cleaned.csv"
 model_dir = "./recommender/saved_model"
 
 if __name__ == "__main__":

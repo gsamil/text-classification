@@ -20,7 +20,7 @@ from classifier.dataset import ClassificationDataset
 
 
 train_file = "./data/train_cleaned.csv"
-test_file = "./data/test_cleaned_all_100.csv"
+test_file = "./data/test_cleaned.csv"
 model_dir = "./classifier/saved_model"
 
 
