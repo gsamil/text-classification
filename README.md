@@ -1,4 +1,8 @@
-# Part A
+# Text Classification
+
+## Proble Description
+
+We are used to working on text classification problem. It's generally very straightforward. However, there are cases where classes also contain some information and we may feel like we should also use this information. For example, we may want to understand user intent in a chatbot, or we may want to categorize a product given its description. In these cases, categories also have semantic meaning, i.e. some categories are related to each other, so we can also create embedding vectors for the categories.
 
 ## Data Preparation
 
@@ -23,3 +27,7 @@
     i. For classification, see [classification/evaluate.py](./classifier/evaluate.py)
     
     ii. For recommendation, see [recommender/evaluate.py](./recommender/evaluate.py)
+
+## References
+
+- [Text Classification Using Class Information](https://www.abdullahsamilguser.com/blog/text-classification/)
